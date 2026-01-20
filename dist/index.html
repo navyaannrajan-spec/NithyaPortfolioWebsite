@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Welcome to my portfolio website. " />
+    <meta itemprop="name" content="Nithya's Portfolio">
+    <meta itemprop="description" content="Welcome to my portfolio website. ">
+    <meta itemprop="image" content="icon img">
+    <meta property="og:url" content="icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nithya's Portfolio">
+    <meta property="og:description" content="Welcome to my portfolio website.">
+    <meta property="og:image" content="icon img">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nithya's Portfolio">
+    <meta name="twitter:description" content="Welcome to my portfolio website.">
+    <meta name="twitter:image" content="imag">
+    <link rel="shortcut icon" href="./assets/images/new.jpeg" type="image/png" />
+    <!----->
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Welcome to my website</title>
+
+    <style>
+        .circle-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+        /* Typewriter effect styles */
+        
+        .typewriter-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            animation: typing 2.5s steps(20) 0.5s forwards;
+        }
+        /* Second line of typewriting animation */
+        
+        .typewriter-second-line {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            animation: typing 2s steps(25) 2s forwards;
+        }
+        /* Typewriting animation */
+        
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        
+        .h1 {
+            line-height: 1.;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        const theme = localStorage.getItem("theme") || "dark";
+        document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+        <div class="menu-btn-container">
+            <div class="container">
+                <button type="button" class="menu-btn">menu</button>
+            </div>
+        </div>
+
+        <nav class="nav hidden">
+            <ol class="nav-items">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#work">Projects</a></li>
+                <li class="nav-item"><a href="#certificates">See My Certificates</a></li>
+                <li class="nav-item"><a href="#cv">My CV</a></li>
+                <li class="nav-item"><a href="#skills">My Skills</a></li>
+                <li class="nav-item">
+                    <a href="#contact" data-focused="last-focused">Contact</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="container">
+            <div class="header-textbox">
+                <!-- Typewriter effect with two lines -->
+                <h1 class="h1">
+                    <span class="typewriter-text">Hi, I'm Nithya...</span><br />
+                    <span class="typewriter-second-line">Aspiring Web Developer.</span>
+                </h1>
+
+                <p class="header-text">
+                    Passionate software developer and BTech student with a creative flair for building user-friendly websites and applications. I’m a 21-year-old final-year student with a strong enthusiasm for software development. Completed a 6-month internship at Grow
+                    Geni.
+                </p>
+
+                <div class="header-btns">
+                    <a href="#contact" class="btn btn-cta">Hire me</a>
+                    <a href="#work" class="btn btn-secondary">See my works</a>
+                    <a href="#cv" class="btn btn-cta">My CV</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+<main>
+    <section class="client">
+        <div class="container">
+            <h2 class="h2">CERTIFIED BY</h2>
+            <div class="logos">
+
+                <div class="logo-group">
+                    <img loading="lazy" src="./assets/images/trusted-by/linkedin.jpg" alt="linkedin" class="logo hide to-top" />
+
+                    <img loading="lazy" src="./assets/images/trusted-by/github.jpg" alt="Github" class="logo" />
+
+                    <img loading="lazy" src="./assets/images/trusted-by/udemy.jpg" alt="Udemy" class="logo hide to-bottom" />
+                </div>
+                <div class="logo-group">
+                    <img loading="lazy" src="./assets/images/trusted-by/gl.jpg" alt="great learning" class="logo hide to-top" />
+
+                    <img loading="lazy" src="./assets/images/trusted-by/kaggle.jpg" alt="kaggle" class="logo" />
+                    <img loading="lazy" src="./assets/images/trusted-by/course.jpg" alt="Coursera" class="logo hide to-bottom" />
+                </div>
+
+                <div class="logo-group">
+                    <img loading="lazy" src="./assets/images/trusted-by/dev.jpg" alt="Devtown" class="logo hide to-top" />
+                    <img loading="lazy" src="./assets/images/trusted-by/ajce.jpg" alt="Ajce" class="logo" />
+                    <img loading="lazy" src="./assets/images/trusted-by/oracle.jpg" alt="oracle" class="logo hide to-bottom" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="work">
+        <div class="container">
+
+            <h2 class="h2" id="work">Projects</h2>
+            <div class="work-boxes">
+                <div class="work-box">
+                    <div class="work-textbox">
+
+                        <p class="work-text">
+                            <strong>GOOGLE DRIVE CLONE</strong>
+                        </p>
+                        <!-- technologies  used to build the project -->
+                        <ol class="work-technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <P>Developed a Google Drive clone using HTML and CSS, focusing on creating a responsive, user-friendly interface. Implemented key design elements to replicate the functionality and layout of the original platform.</P>
+                        </ol>
+
+                        <div class="work-links">
+                            <!--  url of project  -->
+                            <a href="https://github.com/NithyaMariamRajan/google-drive_clone.git" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                
+                  <a
+                    href="https://github.com/NithyaMariamRajan"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                        </div>
+                    </div>
+
+
+
+                    <picture class="work-img">
+                        <img loading="lazy" src="./assets/images/drive.png" alt="Google Drive Clone" />
+                    </picture>
+                </div>
+
+                <!------------------------------------------------------------------------------------------------------>
+                <div class="work-box">
+                    <div class="work-textbox">
+
+                        <p class="work-text">
+                            <strong>SPOTON-TRAVEL WEBSITE</strong>
+                        </p>
+                        <!-- technologies  used to build the project -->
+                        <ol class="work-technologies">
+                            <li>React</li>
+                            <li>MongoDB</li>
+
+                            <P>Developed SpotOn, a travel website using React and MongoDB that creates personalized itineraries based on users preferences and moods. Designed an interactive, user-friendly interface to help users plan trips easily and discover
+                                destinations matching their interests.</P>
+                        </ol>
+
+                        <div class="work-links">
+                            <!--  url of project  -->
+                            <a href="https://github.com/NithyaMariamRajan/project" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                
+                  <a
+                    href="https://github.com/NithyaMariamRajan"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                        </div>
+                    </div>
+
+
+
+                    <picture class="work-img">
+                        <img loading="lazy" src="./assets/images/spoton.jpg" alt="SpotOn" />
+                    </picture>
+                </div>
+
+                <!------------------------------------------------------------------------------------------------------>
+                <div class="work-box">
+                    <div class="work-textbox">
+
+                        <p class="work-text">
+                            <strong>EXPLOREO- Travel Itinerary Generator</strong>
+                        </p>
+                        <!-- technologies  used to build the project -->
+                        <ol class="work-technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+
+                            <P>Developed a Kerala-based Travel Itinerary Generator using HTML, CSS, and JavaScript to create personalized travel plans based on user preferences like destination, days, budget, and mood. Implemented features like dynamic itinerary
+                                generation and weather-based activity suggestions.</P>
+                        </ol>
+
+                        <div class="work-links">
+                            <!--  url of project  -->
+                            <a href="https://github.com/NithyaMariamRajan/exploreo" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                
+                  <a
+                    href="https://github.com/NithyaMariamRajan"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                        </div>
+                    </div>
+
+
+
+                    <picture class="work-img">
+                        <img loading="lazy" src="./assets/images/exploreo.jpg" alt="SpotOn" />
+                    </picture>
+                </div>
+
+
+
+
+
+                <!------------------------------------------------------------------------------------------------------>
+
+
+                <div class="work-box">
+                    <div class="work-textbox">
+
+                        <p class="work-text">
+                            <strong>LUDO GAME</strong>
+                        </p>
+                        <!-- technologies  used to build the project -->
+                        <ol class="work-technologies">
+                            <li>PYTHON</li>
+
+                            <P>Created a Ludo game using Python's Tinker library, implementing game logic, player interaction, and a dynamic graphical interface. Focused on delivering a smooth and engaging user experience with interactive gameplay.</P>
+                        </ol>
+
+                        <div class="work-links">
+                            <!--  url of project  -->
+                            <a href="https://github.com/NithyaMariamRajan/ludo_game.git" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                
+                  <a
+                    href="https://github.com/NithyaMariamRajan"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                        </div>
+                    </div>
+
+
+
+                    <picture class="work-img">
+                        <img loading="lazy" src="./assets/images/ludo.png" alt="LUDO GAME" />
+                    </picture>
+                </div>
+
+
+
+
+                <!--------------------------------------------------------------------------------------->
+                <div class="work-box">
+                    <div class="work-textbox">
+
+                        <p class="work-text">
+                            <strong>CAR GAME</strong>
+                        </p>
+                        <!-- technologies  used to build the project -->
+                        <ol class="work-technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+
+                            <P>A web-based game built using HTML, CSS, and JavaScript, featuring obstacle avoidance, real-time collision detection, and score tracking.</P>
+                        </ol>
+
+                        <div class="work-links">
+                            <!--  url of project  -->
+                            <a href="https://github.com/NithyaMariamRajan/CAR-GAME.git" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                
+                  <a
+                    href="https://github.com/NithyaMariamRajan"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                        </div>
+                    </div>
+
+                    <picture class="work-img">
+                        <img loading="lazy" src="./assets/images/cargame.jpg" alt="portfolio template" />
+                    </picture>
+                </div>
+                <!------------------------------------------------------------------------------------->
+
+
+                <div class="work-box">
+                    <div class="work-textbox">
+
+                        <p class="work-text">
+                            <strong>LIGHTING LAMP</strong>
+                        </p>
+                        <!-- technologies  used to build the project -->
+                        <ol class="work-technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+
+
+                            <P>Developed an interactive lighting lamp with adjustable brightness using HTML and CSS, focusing on front-end functionality and styling.</P>
+                        </ol>
+
+                        <div class="work-links">
+                            <!--  url of project  -->
+                            <a href="https://github.com/NithyaMariamRajan/A-Lighting-Lamp.git" target="_blank" rel="noopener" class="link">Explore this project</a
+                  >
+
+                
+                  <a
+                    href="https://github.com/NithyaMariamRajan"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                        </div>
+                    </div>
+                    <picture class="work-img">
+                        <img loading="lazy" src="./assets/images/lamp.png" alt="portfolio template" />
+                    </picture>
+                </div>
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <section class="certificates">
+                    <div class="container">
+                        <h2 class="h2" id="certificates">My Certificates</h2>
+
+                        <!-- Internship Certificates -->
+                        <h3 class="sub-heading" style="text-align: center; margin-top: 2rem;">INTERNSHIP CERTIFICATE</h3>
+                        <div class="certificates-boxes" style="display: flex; justify-content: center; margin-bottom: 2rem;">
+                            <article class="certificate-box" style="max-width: 400px; text-align: center;">
+                                <div class="certificate-details">
+                                    <h3 class="h3">Grow Geni (6 months)</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="C:\Users\nithy\OneDrive\Desktop\job\portfolios\portfolio-master\assets\images\certif\1\Growgeni.jpg" alt="internship" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+                        </div>
+
+
+                        <!-- Other Certificates -->
+                        <h3 class="sub-heading" style="text-align: center;">OTHER CERTIFICATES</h3>
+                        <div class="certificates-boxes">
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">FLUTTER</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/flutter.png" alt="Certificate 1" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">PYTHON</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/python.png" alt="Certificate 2" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">NPTL</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/nptl.png" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <!-- -------------------------------------------------------------------------------- -->
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">DEV TOWN</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/html and css.png" alt="Certificate 4" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">NIT</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/nitnew.png" alt="Certificate 5" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">BOOTCAMP</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/bootcamp.jpg" alt="Certificate 6" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <!-- -------------------------------------------------------------------------------- -->
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">NACORE</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/1/nacore.jpg" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">HACKATHON</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/1/hackatohn.jpg" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">MASTERMIND</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/1/mastermind.jpg" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">RIT</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/1/rit.jpg" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">ORACLE</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/1/oracle.jpg" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+
+                            <article class="certificate-box">
+                                <div class="certificate-details">
+                                    <h3 class="h3">JAVA</h3>
+                                </div>
+                                <picture class="certificate-img">
+                                    <img src="./assets/images/certif/1/java.jpg" alt="Certificate 3" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+                                </picture>
+                            </article>
+                        </div>
+
+                        <!----------------------------------------------------------->
+                        <section id="cv">
+                            <a href="./Nithya-Resume.pdf" download="My CV.pdf" style="text-decoration: none;">
+                                <button style="padding: 10px 20px; background-color:#007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                                <strong> My CV</strong>
+                            </button>
+                            </a>
+                        </section>
+
+
+
+
+
+
+                        <!------------------------------------------------------------------------------------------------------------------------------------------------>
+                        <section class="skills">
+                            <div class="container">
+                                <h2 class="h2" id="skills">My Toolkit</h2>
+                                <div class="skills-imgs">
+                                    <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
+                                    <img src="./assets/images/skills/py.png" alt="python" class="skills-img" loading="lazy" title="Svelte">
+                                    <img src="./assets/images/skills/c.png" alt="c" class="skills-img" loading="lazy" title="Typescript">
+                                    <img src="assets/images/skills/a11y.webp" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
+                                    <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+                                    <img src="./assets/images/skills/html.png" alt="html" class="skills-img" loading="lazy" title="NextJS">
+                                    <img src="./assets/images/skills/my.png" alt="mysql" class="skills-img" loading="lazy" title="Graph QL">
+                                    <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                                    <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                                    <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!------------------------------------------------------------------------>
+
+                        <section class="contact">
+                            <div class="container">
+                                <h2 class="h2" id="contact">Let's Connect</h2>
+                                <div class="contact-content">
+                                    <!-- Available Section -->
+                                    <div class="available-section">
+                                        <strong href="#" class="hire-alert">
+                                        <span class="indicator"></span>
+                                        Available for hire
+                                    </strong>
+                                        <p class="contact-text">
+                                            <p>Hi, I’m Nithya! I’m a 21-year-old final-year BTech student with a passion for software development. I love working with web technologies to build responsive, user-friendly websites. Aside from coding, I’m into
+                                                photography, music, and art, which inspire me to bring creativity into my work. I’ve completed a 6-month internship at Grow Geni, worked on projects like a Travel Website, a Google Drive clone, and a Ludo
+                                                game, and I’m currently developing a project using a Deep Learning model (ResNet) for cavity detection. I’m eager to keep learning and growing in this field.</p>
+                                        </p>
+                                        <p class="contact-text">
+                                            I’m actively seeking opportunities for internships or full-time roles in software development. With a solid foundation in web development and a passion for creating engaging, user-centered designs, I’m ready to bring fresh ideas and hard work to your
+                                            team. If you’re looking for a developer who’s enthusiastic, adaptable, and eager to grow, I’d love to be part of your journey.</p>
+
+                                    </div>
+
+                                    <!-- Contact Info Section -->
+                                    <div class="contact-details">
+                                        <div class="contact-item">
+                                            <label for="phone">Phone</label>
+                                            <p id="phone">7025564189</p>
+                                        </div>
+                                        <div class="contact-item">
+                                            <label for="email">Email</label>
+                                            <p id="email"><a href="mailto:nithyamariamrajan@gmail.com">Contact me by email</a></p>
+                                        </div>
+                                        <div class="contact-item">
+                                            <label for="linkedin">Whatsapp</label>
+                                            <p id="linkedin"><a href="https://wa.me/7025564189" target="_blank">Connect with me on WhatsApp</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+
+
+
+
+
+
+                        <!------------------------------------------------------------------------------------------------------------------->
+                        <footer class="footer">
+                            <div class="container">
+                                <div class="footer-content">
+
+
+
+                                    <nav>
+                                        <ol class="footer-links">
+                                            <li class="footer-link">
+                                                <a title="GitHub" href="https://github.com/NithyaMariamRajan" target="_blank" rel="noopener"><img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+                                            </li>
+
+                                            <li class="footer-link">
+                                                <a title="Linkedin" href="https://www.linkedin.com/in/nithya-mariam-rajan-695428254/" target="_blank" rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+                                            </li>
+                                            <li class="footer-link">
+                                                <a title="Whatsapp" href="https://wa.me/7025564189" target="_blank" rel="noopener">
+                                                    <img loading="lazy" src="./assets/images/social-links/whts.jpg" alt="Whatsapp" />
+                                                </a>
+                                            </li>
+                                    </nav>
+                                    <p class="footer-text">
+                                        &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="github link">Nithya.</a>
+                                    </p>
+                                    <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+                                </div>
+                            </div>
+                        </footer>
+                        </body>
+
+                        </html>
